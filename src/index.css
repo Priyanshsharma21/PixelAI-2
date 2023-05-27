@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background: #172712; */
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+  }
+}
+
+.prompt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+
+.demo {
+  color: #a802cd;
+  color: #ff5e00;
+  color: #2bff67;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 30px;
+}
+
+/* Custom ScrollBar Css  */
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 0.7vw;
+}
+
+
+/* Track Style */
+::-webkit-scrollbar-track {
+  background-color: #181818 !important;
+}
+
+/* thumb style */
+::-webkit-scrollbar-thumb {
+  background-color: #6e78ff !important;
+  border-radius: 3px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6d75e8 !important;
+}
+
+
+/* buttons style */
+::-webkit-scrollbar-button:single-button {
+  background-color: #38fe63 !important;
+  display: block !important;
+  background-size: 10px !important;
+  background-repeat: no-repeat !important;
+}
+
+
+::-webkit-scrollbar-button:single-button:hover {
+  background-color: #d0cbcb !important;
+}
+
+
+
+
+.surpriseMe{
+  color: black;
+  background: white;
+  padding: 0rem 0.6rem 0rem 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s all linear;
+}
+
+.surpriseMe:hover{
+  transform : scale(1.03)
+}
+
+.surpriseMe:active{
+  transform : scale(0.93)
+}
+
+
+.input_ai{
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
